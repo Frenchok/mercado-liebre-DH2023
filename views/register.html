@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5465f2ec7b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+          <img src="/images/logo-mercado-liebre.svg" class="logo">
+          <form action="#" method="get" class="search-bar">
+            <div>
+            <input type="text" name="busqueda" placeholder="Buscar productos, marcas...">
+          </div>
+          <div>
+            <button type="submit" value="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          </form>
+          <h2 class="copy-header">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          Comprá en cuotas y sin tarjeta de crédito
+        </h2>
+      </div>
+      <a href="#" class="hamburguer-button">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+       <nav class="main-navbar">
+        <ul class="left-navbar">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="right-navbar">
+          <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-credit-card"></i></a></li>
+          <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+          <li><a href="#">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+      </nav>
+      </header>
+    <main>
+        <form action="/" method="get" class="form-register">
+            <div class="campos">
+                <label>
+                    <input type="text" required pattern=".{2,}" title="Debe tener al menos 2 caracteres" name="Nombre" placeholder="Nombre y Apellido" class="campos-input">
+                </label>
+            </div>
+            <div class="campos">
+                <label>
+                    <input type="text" required pattern=".{2,}" title="Debe tener al menos 2 caracteres" name="Usuario" placeholder="Nombre de Usuario" class="campos-input">
+                </label>
+            </div>
+            <div class="campos">
+                <label>
+                    <input type="email" required pattern=".{2,}" title="Debe tener al menos 2 caracteres" name="email" placeholder="Email" class="campos-input">
+                </label>
+            </div>
+            <div class="campos">
+                <label>
+                    <input type="text" required pattern=".{2,}" title="Debe tener al menos 2 caracteres" name="Domicilio" placeholder="Domicilio" class="campos-input">
+                </label>
+            </div>
+            <div class="campos">
+                <label>
+                    <input type="password" required pattern=".{2,}" title="Debe tener al menos 2 caracteres" name="Contraseña" placeholder="Contraseña" class="campos-input">
+                </label>
+            </div>
+            <div class="campos">
+                <label>
+                    <input type="password" required pattern=".{2,}" title="Debe tener al menos 2 caracteres" name="confirmContraseña" placeholder="Confirmar Contraseña" class="campos-input">
+                </label>
+            </div>
+            <h3>Fecha de Nacimiento</h3>
+            <div class="campos">
+                <label>
+                    <input type="date"  name="Nacimiento" placeholder="mm / dd / yyyy" class="campos-input">
+                </label>
+            </div>
+            <h3>Perfil de Usuario</h3>
+            <div class="campos-perfil">
+                <div>
+                    <label for="comprar">
+                        <input type="radio" id="comprar" name="perfilDeUsuario" class="campos-input">
+                        Comprador
+                    </label>
+                </div>
+                <div>
+                    <label for="vender">
+                        <input type="radio" id="vender" name="perfilDeUsuario" class="campos-input">
+                        Vendedor
+                    </label>
+                </div>
+            </div>
+            <h3>Categorías de interés</h3>
+            <div class="campos-interes">
+                <label for="Electro">
+                    <input type="checkbox" id="Electro" name="categoriaInteres">Electro
+                </label>
+                <label for="Moda">
+                    <input type="checkbox" id="Moda" name="categoriaInteres">Moda
+                </label>
+                <label for="Hogar">
+                    <input type="checkbox" id="Hogar" name="categoriaInteres">Hogar
+                </label>
+                <label for="Jugueteria">
+                    <input type="checkbox" id="Jugueteria" name="categoriaInteres">Juguetería
+                </label>
+                <label for="VidaSana">
+                    <input type="checkbox" id="VidaSana" name="categoriaInteres">Vida Sana
+                </label>
+            </div>
+            <h3>Foto de Usuario</h3>
+            <div class="campos-foto">
+                <label>
+                    <input type="file" name="fotoUsuario">
+                </label>
+            </div>
+            <button type="submit" class="boton-formulario">Enviar</button>
+            <button type="reset" class="boton-formulario">Borrar</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

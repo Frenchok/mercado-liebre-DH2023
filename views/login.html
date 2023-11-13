@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5465f2ec7b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+          <img src="/images/logo-mercado-liebre.svg" class="logo">
+          <form action="#" method="get" class="search-bar">
+            <div>
+            <input type="text" name="busqueda" placeholder="Buscar productos, marcas...">
+          </div>
+          <div>
+            <button type="submit" value="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          </form>
+          <h2 class="copy-header">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          Comprá en cuotas y sin tarjeta de crédito
+        </h2>
+      </div>
+      <a href="#" class="hamburguer-button">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+       <nav class="main-navbar">
+        <ul class="left-navbar">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="right-navbar">
+          <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-credit-card"></i></a></li>
+          <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+          <li><a href="#">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+      </nav>
+      </header>
+    <main>
+        <form action="/" method="get" class="form-register">
+            <h1>Ingresá tu usuario y contraseña de MercadoLiebre</h1>
+            <div class="campos">
+                <label>
+                    <input type="text" required pattern=".{2,}" title="Debe tener al menos 2 caracteres" name="Usuario" placeholder="Nombre de Usuario">
+                </label>
+            </div>
+            <div class="campos">
+                <label>
+                    <input type="password" required pattern=".{2,}" title="Debe tener al menos 2 caracteres" name="Contraseña" placeholder="Contraseña">
+                </label>
+            </div>
+            <button type="submit" class="boton-formulario">Enviar</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
