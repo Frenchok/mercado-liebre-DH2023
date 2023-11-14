@@ -19,7 +19,7 @@ body {
 }
 
 .copy-header {
-  font-weight: 400;
+  font-weight: 400px;
   text-align: center;
 }
 
@@ -117,7 +117,7 @@ body {
     text-align: center;
     font-size: 2em;
     padding-bottom: 10px;
-    color: #1259c3;
+    color: #0022AA;
   }
   .row {
     font-size: 12px;
@@ -188,16 +188,25 @@ body {
     .main-navbar li {
       margin: 0 5px;
     }
+    .search-bar input{
+      margin: 40px 5px 0px;
+      width: 100%;
+      border: none;
+      padding: 5px 100px 3px 5px;
+      border-radius: 8px;
+     }
     .search-bar {
+      border: none;
       max-width: 100%;
       display: flex;
-      margin: auto;
+      margin: 0 20px;
       padding-left: 15px;
       padding-right: 10px;
       border-radius: 8px;
       text-align: center;
     }
-    .search-bar i{
+    .search-bar button{
+      margin: 45px 5px 0px 15px;
       background:#eac926;
       border: none;
       padding: 0;
@@ -233,20 +242,6 @@ body {
     .main-navbar a {
       font-size: 19px;
     }
-    .search-bar {
-      display: flex;
-      margin: auto;
-      padding-left: 15px;
-      padding-right: 10px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    .search-bar i{
-      background:#eac926;
-      border: none;
-      padding: 0;
-      border-radius: 8px;
-    }
     .article{
       display: flex;
       flex-wrap: wrap;
@@ -271,6 +266,7 @@ body {
       display: flex;
     }
     .cont-pie:hover i{
-      color: #03264c;
+      color: #1259c3;
     }
+    
   }

@@ -12,8 +12,6 @@ body {
 .main-header {
   background-color: #eac926;
   padding: 20px;
-  position: relative;
-  top: 0;
 }
 
 .logo {
@@ -21,11 +19,11 @@ body {
 }
 
 .copy-header {
-  font-weight: 400;
+  font-weight: 400px;
   text-align: center;
 }
 
-.hamburguer-button {
+  .hamburguer-button {
   background-color: #1259c3;
   color: #ffffff;
   display: block;
@@ -35,29 +33,26 @@ body {
   text-align: center;
   font-size: 18px;
   margin: 20px auto 0;
-}
+  }
+  .main-navbar{
+    display: none;
+  }
+  .main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-.main-navbar {
-  display: none;
-}
-
-.main-navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-}
-
-.main-navbar a {
-  text-decoration: none;
-  color: #222222;
-  display: inline-block;
-  padding: 5px 0;
-  font-size: 17px;
-}
-.search-bar{
-  display: none;
-}
+  }
+  .main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+  }
+  .search-bar{
+    display: none;
+  }
 
 .form-register {
   margin-top: 10px;
@@ -103,21 +98,43 @@ body {
   font-size: 18px;
   margin: 0 auto 20px;
 }
-
-.campos-foto {
-  padding: 0px 8px 8px 8px;
-  margin-bottom: 20px;
+.container{
+  padding: 20px;
 }
+.cont-pie{
+  font-size: 12px;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+.cont-pie i{
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 10px;
+  color: #0022AA;
+}
+.row {
+  font-size: 12px;
+  padding-top: 20px;
+}
+.footer{
+  background-color: white;
+}
+ 
+.footer .container h3{
+  display:flex;
+  font-size: 16px;
+  text-align: center;
+  flex-direction: column;
+  color: #666;
+}
+
 
 @media (min-width: 426px) {
   .main .container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .article {
-    width: 45%;
   }
 
   .main-header-top-bar {
@@ -146,16 +163,25 @@ body {
   .main-navbar li {
     margin: 0 5px;
   }
+  .search-bar input{
+    margin: 40px 5px 0px;
+    width: 100%;
+    border: none;
+    padding: 5px 100px 3px 5px;
+    border-radius: 8px;
+   }
   .search-bar {
+    border: none;
     max-width: 100%;
     display: flex;
-    margin: auto;
+    margin: 0 20px;
     padding-left: 15px;
     padding-right: 10px;
     border-radius: 8px;
     text-align: center;
   }
-  .search-bar i{
+  .search-bar button{
+    margin: 45px 5px 0px 15px;
     background:#eac926;
     border: none;
     padding: 0;
@@ -165,39 +191,12 @@ body {
   .form-register {
     text-align: center;
     padding-top: 5px;
-    max-width: 60%;
+    max-width: 40%;
 
     margin: 20px auto;
 
   }
-
-
 }
-
-.campos input,
-.campos label {
-  width: 100%;
-
-  max-width: 400px;
-
-  margin: 0;
-
-}
-
-.boton-formulario {
-  max-width: 200px;
-
-
-}
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 769px) {
   .logo {
@@ -232,50 +231,18 @@ body {
   .main-navbar a {
     font-size: 19px;
   }
-  .search-bar {
-    display: flex;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  .search-bar i{
-    background:#eac926;
-    border: none;
-    padding: 0;
-    border-radius: 8px;
-  }
-
-  .article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 22%;
-  }
-
-  .article:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    transition: 0.5ms;
-    transition-delay: .15s;
-  }
-
-  .form-register {
-    text-align: center;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    max-width: 60%;
-
-    margin: 30px auto;
-
-  }
-  
-
-  .campos {
-    padding-left: 100px;
-  }
+ 
+ 
   .boton-formulario:hover {
     background-color: #0022AA;
     
   }
+  .row{
+    display: flex;
+    
+  }
+  .cont-pie:hover i{
+    color: #1259c3;
+  }
+ 
 }
